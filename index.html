@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html> 
+<head>
+	<title>Phi's Homepage</title>
+	<!-- Make sure page loads right and scales right on all devices -->	
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<style>
+	.jumbotron{
+		background-color:rgb(56,56,178);
+		border-radius:8px;
+		color:white;
+	}
+	.panel-heading{
+		background-color:rgb(56,56,170);
+	}
+	}
+</style>
+</head>
+
+<body>
+<div class="container col-md-8 col-md-offset-2 col-lg-offset-2 col-lg-8 col-sm-8 col-sm-offset-2 col-xm-12">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapesed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+					<span class="sr-only"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbar">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+						<li><a href="#about_me"> About </a></li>
+						<li><a href="#projects"> Projects</a></li>
+						<li><a href="#resume">Resume</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>	
+			</div>	
+		</div>
+	</nav>	
+</div>
+
+<!-- <div class="row">
+<div class="col-lg-offset-2 col-lg-8 text-center">
+	<b
+		<a href="#about_me" class="btn btn-default btn-lg" role="button">About Me</a>
+		<a href="#projects" class="btn btn-info btn-lg" role="button">My Projects</a>	
+		<a href="#resume" class="btn btn-primary btn-lg" role="button">Resume</a>
+</div>	
+</div> -->
+<div class="container col-md-8 col-md-offset-2 col-lg-offset-2 col-lg-8 col-sm-8 col-sm-offset-2 col-xm-12">
+	<div class="page-header">
+	<h1 style="font-size:4em"> Welcome to my Homepage </h1> 
+	</div>
+</div>
+
+<div class="row text-center" id="about_me">
+<div class="col-md-8 col-md-offset-2 col-lg-offset-2 col-lg-8
+col-sm-8 col-sm-offset-2 col-xm-12 ">
+	<div class="jumbotron bg-primary">
+		<div class="row">
+
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xm-12" style="padding-left:40px">
+				<img src="Profile_picture.jpg" alt="Profile Image" width="300px"/> 
+			</div>
+
+			<div class="col-lg-6 col-lg-offset-2 col-md-6 col-md-offset-2 col-sm-6 col-sm-offset-3 col-xm-12 " style="padding-left:40px">
+				<h2> A little about me: </h2>
+				<p style="font-size:2em">
+				My name is Phi Nguyen. I am a second year Computer Science major at the University of California, Irvine.
+				Outside of programming, I enjoy weightlifting, basketball, badminton, and spending time with my family and friends. 
+				</p>
+			</div>	
+
+		</div>	
+	</div>
+	</div>	
+</div>
+<div class="container-fluid row" id="projects">
+	<div class="col-md-8 col-md-offset-2 col-lg-offset-2 col-lg-8 col-sm-8 col-sm-offset-2 col-xm-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+			<h1> My Projects </h1>	
+			</div>
+		<div class="page-header text-center">
+			<h2>ImLookingFor <smaall>Android App</smaall></h2>	
+		</div>
+		<div class="panel-body text-center">
+			<div id="carousel-id" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">	
+					<li data-target="#carousel-id" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-id" data-slide-to="1" class=""></li>
+					<li data-target="#carousel-id" data-slide-to="2" class=""></li>	
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img data-src="" alt="First Slide" src="imLookingFor/login.png" class="img-responsive center-block" width="480px">
+						<div class="container">
+							<div class="carousel-caption"> <h2>Front Screen</h2></div>
+						</div>
+					</div>
+					<div class="item">
+						<img data-src="" alt="Second Slide" src="imLookingFor/newAddr.jpg" class="img-responsive center-block" width="480px">
+						<div class="container">
+							<div class="carousel-caption"><h2>Creating a new Event </h2></div>
+						</div>
+					</div>
+					<div class="item">
+						<img data-src="" alt="Third Slide" src="imLookingFor/sidebar.png" class="img-responsive center-block" width="480px">
+						<div class="container">
+							<div class="carousel-caption"><h2>Sidebar </h2></div>
+						</div>
+					</div>
+					<a class="left carousel-control" href="#carousel-id"  data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+					<a class="right carousel-control" href="#carousel-id"  data-slide="prev"><span class="glyphicon glyphicon-chevron-right"></span></a>
+				
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid row text-center" id="resume">
+	<div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-2 col-xm-12">
+		<div class="panel panel-default">
+			<div class="panel-heading text-left"> <h1>Resume</h1></div>
+			<div class="panel-body">
+				<object data="Resume_new.pdf" style="width: 100%; height: 1028px; display: block;"></object>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+<div class="row text-center" id="contact">
+<div class="col-md-8 col-md-offset-2 col-lg-offset-2 col-lg-8
+col-sm-8 col-sm-offset-2 col-xm-12 ">
+	<div class="jumbotron bg-primary">
+		<div class="row">
+			<h2> Contact Me </h2>
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xm-12">
+				<a href="mailto:philn1@uci.edu?subject=Hello Phi"><img src="logos/Gmail-Logo.png" alt="gmail" width="65%" height="65%"/></a>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xm-12">
+				<a href="https://github.com/lolphish"><img src="logos/Github-icon.png" alt="github" width="65%" height="65%" /></a>
+			</div>	
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xm-12">
+				<a href="tel:4088059246"><img src="logos/call.png" alt="call" width="60%" height="60%"/></a>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
