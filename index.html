@@ -1,158 +1,295 @@
 <!DOCTYPE HTML>
-<html> 
+<html lang="en"> 
 <head>
-	<title>Phi's Homepage</title>
+	<title>Phi Nguyen</title>
 	<!-- Make sure page loads right and scales right on all devices -->	
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width = device-width, initial-scale = 1">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-
+	<link rel="stylesheet" type="text/css" href="css/custom-index.css">
+	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
 <style>
-	.jumbotron{
-		background-color:rgb(56,56,178);
-		border-radius:8px;
-		color:white;
-	}
-	.panel-heading{
-		background-color:rgb(56,56,170);
-	}
-	}
+body, html {
+    height: 100%;
+}
 </style>
 </head>
-
-<body>
-<div class="container col-md-8 col-md-offset-2 col-lg-offset-2 col-lg-8 col-sm-8 col-sm-offset-2 col-xm-12">
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapesed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-					<span class="sr-only"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbar">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
-						<li><a href="#about_me"> About </a></li>
-						<li><a href="#projects"> Projects</a></li>
-						<li><a href="#resume">Resume</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</div>	
-			</div>	
-		</div>
-	</nav>	
+<body id="page-top">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="mainNav">
+    <div class="container">
+        <a href="#page-top" class="navbar-brand js-scroll-trigger">PN</a>
+        <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbar9">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar9">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                </li
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="assets/Resume.pdf">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#explore">Explore</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="bg"></div>
+<div class="jumbotron mb-0 d-flex align-items-center flex-column justify-content-center min-100" id="header">
+    <h1 class="display-1">Phi Nguyen</h1>
+    <p>Welcome to my Website.</p>
 </div>
-
-<div class="container col-md-8 col-md-offset-2 col-lg-offset-2 col-lg-8 col-sm-8 col-sm-offset-2 col-xm-12">
-	<div class="page-header">
-	<h1 style="font-size:4em"> Phi Nguyen </h1> 
-	</div>
+<div class="jumbotron mb-0 d-flex align-items-center flex-column justify-content-center min-100" id="about">
+    <h1 class="display-4">About</h1>
+    <br>
+    <div class="media">
+    <img class="d-flex align-self-center mr-3" src="assets/images/picture.jpg" alt="picture" id="profile_picture">
+    <div class="media-body">
+        <p>I am currently a senior standing software engineer at the University of California, Irvine. I am currently employed as a 
+            Software Developer at UCI's Office of Information Technology, but I was also previously as Full Stack Software Engineering
+            Intern at Kelley Blue Book. At UC Irvine, I've worked on projects related to web development and artificial intelligence. </p>
+        <p class="mb-0"> I am an experienced programmer with a drive for innovation and an ambition to reach my maximum potential.</p>
+        <p class="mb-1"><strong>I aspire to one day work alongide driven, ambitious people on a great product that pushes the boundaries of creativity and technology.</strong></p>
+    </div>
+    </div>
 </div>
+<div class="jumbotron mb-0 d-flex align-items-center flex-column justify-content-center min-100" id="experience">
+    <div class="container pt-3">
+        <div class="row">
+            <div class="col-12 col-sm-10 mx-auto">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Experience</h1>
+                        <p class="lead">Here are my work experiences and projects that I've worked on. Click to learn more!</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card" id="cardKbb">
+                            <div class="card-body">
+                                <div class="row p-3">
+                                    <div class="col-12">
+                                        <h3>Kelley Blue Book</h3>
+                                        <img src="assets/images/kbb_office.jpg" class="img-fluid">
+                                        <hr>
+                                        <p class="">Software Engineering Intern in the Summer of 2017</p>
+                                        <button class="btn btn-secondary" data-toggle="modal" data-target="#kbbModal">Learn More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="card" id="cardFabflix">
+                            <div class="card-body">
+                                <div class="row p-3">
+                                    <div class="col-12">
+                                        <h3>Fabflix</h3>
+                                        <img src="//unsplash.it/400x200" class="img-fluid">
+                                        <hr>
+                                        <p class="">Project for Databases and Web Development course. AWS hosted movie database website similar to IMBD.</p>
+                                        <button class="btn btn-secondary" data-toggle="modal" data-target="#fabflixModal">Learn More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card" id="cardOit">
+                            <div class="card-body">
+                                <div class="row p-3">
+                                    <div class="col-12">
+                                        <h3>UCI Office of Information Technology</h3>
+                                        <img src="assets/images/ayala.jpg" class="img-fluid">
+                                        <hr>
+                                        <p class="">Currently a programmer for an enterprise web application for the office of research.</p>
+                                        <button class="btn btn-secondary" data-toggle="modal" data-target="#oitModal">Learn More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <br>
+                        <div class="card" id="cardWumpus">
+                            <div class="card-body">
+                                <div class="row p-3">
+                                    <div class="col-12">
+                                        <h3>WumpusWorld</h3>
+                                        <img src="//unsplash.it/400x200" class="img-fluid">
+                                        <hr>
+                                        <p class="">Project for Artificial Intelligence course.</p>
+                                        <button class="btn btn-secondary" data-toggle="modal" data-target="#wumpusModal">Learn More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/row-->
+            </div><!--col-->
+        </div><!--row-->
+        <!-- KBB Modal -->
+        <div class="modal fade" id="kbbModal" tabindex="-1" role="dialog" aria-labelledby="kbbModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="kbbModalLabel">Kelley Blue Book</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <blockquote class="blockquote">
+                <p class="mb-0">Software Engineering Intern</p>
+                <footer class="blockquote-footer">
+                <cite title="Source Title">for the period of Summer 2017</cite>
+                </footer>
+                </blockquote>
+                <p class"mb-1"> One of the coolest experience I've ever had. I got the chance to work on their Price Advisor project, 
+                    which was a React-based project that connects to an API ran in .NET. I was put into a team of around 10 people, where I
+                    was put into a test-driven agile scrum environment, and I had a chance to learn how to work and contribute in such a setting.
+                    Through the internship, I've gained major experience working with React, Redux, Node.JS, .NET, and various other tools that
+                    I used along the way.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- OIT Modal -->
+        <div class="modal fade" id="oitModal" tabindex="-1" role="dialog" aria-labelledby="oitModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="oitModalLabel">UC Irvine Office of Information Technology</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <blockquote class="blockquote">
+                <p class="mb-0">Software Developer</p>
+                <footer class="blockquote-footer">
+                <cite title="Source Title">currently working since July 2016</cite>
+                </footer>
+                </blockquote>
+                <p class"mb-1"> OIT was my first real programming job. I worked as part of a team that maintains and develop a Java-based 
+                    enterprise level web application for the office of research here at UCI. Throughout my year here so far, I've completed 
+                    over 50 JIRA tickets, primarily consists of creating, updating, and maintaining various SQL modules, understanding and
+                    changes to an extremely large project. 
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- Fabflix Modal -->
+        <div class="modal fade" id="fabflixModal" tabindex="-1" role="dialog" aria-labelledby="fabflixModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="fabflixModalLabel">Fabflix Project</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <blockquote class="blockquote">
+                <p class="mb-0">Full Stack Developer for CS122B: Projects in Databases and Web Applications</p>
+                <footer class="blockquote-footer">
+                <cite title="Source Title">Spring 2017</cite>
+                </footer>
+                </blockquote>
+                <p class"mb-1"> One of the coolest projects I've ever gotten to work on and one of the hardest class I've ever
+                    taken here at UCI. The sypnopsis for the project is basically create a website that basically acts and looks like
+                    IMDB, except with additional app and shopping cart functionality. We were given a list of data for our database, 
+                    and the rest was up to us. We implemented user caching, different movie searches, AJAX functionality, android application
+                    functionality, and so much more. It was one of the most fleshed out project that I've ever worked on.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- Wumpus Modal -->
+        <div class="modal fade" id="wumpusModal" tabindex="-1" role="dialog" aria-labelledby="wumpusModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="wumpusModalLabel">Wumpus World</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <blockquote class="blockquote">
+                <p class="mb-0">Software Programmer for CS171: Intro to Artificial Intelligence</p>
+                <footer class="blockquote-footer">
+                <cite title="Source Title">Fall 2017</cite>
+                </footer>
+                </blockquote>
+                <p class"mb-1"> Currently working on this one. Will update soon!
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div><!--container-->
+</div><!--jumbotron-->
 
-<div class="row text-center" id="about_me">
-<div class="col-md-8 col-md-offset-2 col-lg-offset-2 col-lg-8
-col-sm-8 col-sm-offset-2 col-xm-12 ">
-	<div class="jumbotron bg-primary">
-		<div class="row">
-
-			<div class="col-lg-3 col-md-6 col-sm-6 col-xm-12" style="padding-left:30px; padding-right:30px">
-				<img src="Profile_picture.jpg" alt="Profile Image" width="300px"/> 
-			</div>
-
-			<div class="col-lg-6 col-lg-offset-2 col-md-6 col-md-offset-2 col-sm-6 col-sm-offset-3 col-xm-12 " style="padding-left:30px; padding-right:30px">
-				<h2> A little about me: </h2>
-				<p style="font-size:2em">
-				My name is Phi Nguyen. I am a junior Computer Science major at the University of California, Irvine.
-				Outside of programming, I enjoy weightlifting, basketball, badminton, and spending time with my family and friends. 
-				</p>
-			</div>	
-
-		</div>	
-	</div>
-	</div>	
-</div>
-<div class="container-fluid row" id="projects">
-	<div class="col-md-8 col-md-offset-2 col-lg-offset-2 col-lg-8 col-sm-8 col-sm-offset-2 col-xm-12">
-		<div class="panel panel-default">
-			<div class="panel-heading">
-			<h1> My Projects </h1>	
-			</div>
-		<div class="page-header text-center">
-			<h2>ImLookingFor <smaall>Android App</smaall></h2>	
-		</div>
-		<div class="panel-body text-center">
-			<div id="carousel-id" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">	
-					<li data-target="#carousel-id" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-id" data-slide-to="1" class=""></li>
-					<li data-target="#carousel-id" data-slide-to="2" class=""></li>	
-				</ol>
-				<div class="carousel-inner">
-					<div class="item active">
-						<img data-src="" alt="First Slide" src="imLookingFor/login.png" class="img-responsive center-block" width="480px">
-						<div class="container">
-							<div class="carousel-caption"> <h2>Front Screen</h2></div>
-						</div>
-					</div>
-					<div class="item">
-						<img data-src="" alt="Second Slide" src="imLookingFor/newAddr.jpg" class="img-responsive center-block" width="480px">
-						<div class="container">
-							<div class="carousel-caption"><h2>Creating a new Event </h2></div>
-						</div>
-					</div>
-					<div class="item">
-						<img data-src="" alt="Third Slide" src="imLookingFor/sidebar.png" class="img-responsive center-block" width="480px">
-						<div class="container">
-							<div class="carousel-caption"><h2>Sidebar </h2></div>
-						</div>
-					</div>
-					<a class="left carousel-control" href="#carousel-id"  data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-					<a class="right carousel-control" href="#carousel-id"  data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-				
-				</div>
-			</div>
-		</div>
-		</div>
-	</div>
-</div>
-<div class="container-fluid row text-center" id="resume">
-	<div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-2 col-xm-12">
-		<div class="panel panel-default">
-			<div class="panel-heading text-left"> <h1>Resume</h1></div>
-			<div class="panel-body">
-				<object data="PhiNguyenResume.pdf" style="width: 100%; height: 1028px; display: block;"></object>
-			</div>
-		</div>
-	</div>
-</div>
-<br>
-<div class="row text-center" id="contact">
-<div class="col-md-8 col-md-offset-2 col-lg-offset-2 col-lg-8
-col-sm-8 col-sm-offset-2 col-xm-12 ">
-	<div class="jumbotron bg-primary">
-		<div class="row">
-			<h2> Contact Me </h2>
-			<div class="col-lg-3 col-md-6 col-sm-6 col-xm-12">
-				<a href="mailto:philn1@uci.edu?subject=Hello Phi"><img src="logos/Gmail-Logo.png" alt="gmail" width="65%" height="65%"/></a>
-			</div>
-			<div class="col-lg-3 col-md-6 col-sm-6 col-xm-12">
-				<a href="https://github.com/lolphish"><img src="logos/Github-icon.png" alt="github" width="65%" height="65%" /></a>
-			</div>	
-			<div class="col-lg-3 col-md-6 col-sm-6 col-xm-12">
-				<a href="tel:4086665248"><img src="logos/call.png" alt="call" width="60%" height="60%"/></a>
-			</div>
-			<div class="col-lg-3 col-md-6 col-sm-6 col-xm-12">
-				<a href="https://www.linkedin.com/in/phi-nguyen-42222a123"><img src="logos/LinkedIn-Logo.png" alt="call" width="60%" height="60%"/></a>
-			</div>
-		</div>
-	</div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+    
+<div class="jumbotron mb-0 d-flex align-items-center flex-column justify-content-center min-50" id="explore">
+    <h1 class="Lead">Explore</h1>
+    <p class="text-muted"><font size="2"> © 2017 Phi Nguyen. All rights reserved. </font></p>
+      <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/lolphish">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="mailto:ngynphi@gmail.com">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/phi-nguyen-42222a123/">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/lolphish">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
 </body>
 </html>
